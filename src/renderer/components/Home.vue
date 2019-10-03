@@ -36,7 +36,6 @@ export default {
     ipcRenderer.on('HomePage', (event, message, info) => {
       this.dis = false
       this.token = ''
-      console.log(message)
       switch (message) {
         case 'ok':
           this.token = info

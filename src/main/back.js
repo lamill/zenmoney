@@ -47,8 +47,6 @@ export class ZenClient {
         shell.openExternal(url)
       })
       let resVal = (token) => {
-        console.log(data.rejected)
-        console.log(data.Aerror)
         const retVal = {
           token: data.token,
           error: data.rejected && data.Aerror === null
@@ -58,7 +56,6 @@ export class ZenClient {
         resolve(retVal)
       }
       authWindow.webContents.on('did-get-redirect-request', async function (e, oldUrl, newUrl) {
-        console.log(newUrl)
         if (!newUrl.startsWith(redirectUri)) {
           return
         }
