@@ -1,6 +1,6 @@
 # zenmoney
 
-> zenmonet token getter
+> zenmoney token getter
 
 #### Build Setup
 
